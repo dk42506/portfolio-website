@@ -1,8 +1,38 @@
-#middle-container {
-    height: 40%;
-    width: 20%;
+*{
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    outline-color: red;
-    outline-width: 3px;
+}
+
+#middle-container {
+    margin-top: 25vh;
+    height: 60vh;
+    width: 50vw;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 40px;
+}
+
+#mid-container-content {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    display: flex;
+}
+
+#info {
+    flex: 1;
+}
+
+#picture {
+    flex: 2;
+}
+
+#pic {
+    height: 5vh;
+    width: 5vw;
+    background-color: black;
 }
