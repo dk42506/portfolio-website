@@ -1,0 +1,8 @@
+#middle-container {
+    height: 40%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    outline-color: red;
+    outline-width: 3px;
+}
