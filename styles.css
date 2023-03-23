@@ -25,14 +25,34 @@ header {
 
 #info {
     flex: 1;
+    width: 45%;
+    float: left;
+
+    
 }
 
 #picture {
-    flex: 2;
+    flex: 1;
+    width: 15%; 
+    padding-right: 10%;
+    padding-top: 20%;
 }
 
+
 #pic {
-    height: 5vh;
-    width: 5vw;
+    width: 10vw;
+    float: right;
     background-color: black;
+    border-radius: 50%;
+    margin: 0;
+}
+
+#pic::after{
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+
+#image {
+    position: absolute;
 }
