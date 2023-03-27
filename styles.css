@@ -45,3 +45,19 @@ header {
     padding-bottom: 100%;
     display: block;
 }
+
+#menu {
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.square {
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    background-color: white;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    border-radius: 10%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
