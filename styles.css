@@ -9,6 +9,10 @@ body{
     background-color: #e8e8e8;
 }
 
+header{
+    margin-bottom: 100vh;
+}
+
 .name{
     text-align: center;
     font-family: 'Zeyada', cursive;
@@ -23,6 +27,33 @@ body{
     font-family: 'Prompt', sans-serif;
 }
 
+.page-number {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 2vw;
+    font-family: 'Prompt', sans-serif;
+}
+
+#about-me-header-container {
+    width: 30vw;
+    height: 13vh;
+    background-color: #e0e0e0;
+    margin-left: 1vw;
+    margin-top: 5vh;
+}
+
+#about-me-Title{
+    z-index: 1;
+    position: absolute;
+    font-size: 6rem;
+    padding-left: 3vw;
+    font-family: 'Prompt', sans-serif;
+
+}
+
+#about-me{
+    margin-bottom: 100vh;
+}
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -30,6 +61,6 @@ body{
 }
 
 @keyframes namefadeInTop {
-    0% { transform: translateY(-1rem); }
+    0% { transform: translateY(-2rem); }
     100% { transform: translateY(0); }
 }
