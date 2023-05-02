@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 *{
     margin: 0;
@@ -12,6 +13,21 @@ body{
 header{
     margin-bottom: 90vh;
 }
+
+#divider{
+    margin-bottom: 90vh;
+}
+
+#page-number {
+    font-size: 1.4rem;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+
 
 #name{
     text-align: center;
@@ -27,12 +43,11 @@ header{
     font-family: 'Prompt', sans-serif;
 }
 
-#page-number {
-    font-weight: bold;
-    font-size: 2rem;
-    margin-left: 4vw;
-    font-family: 'Prompt', sans-serif;
-}
+
+
+
+
+
 
 #about-me-Title-box {
     width: 30vw;
@@ -52,7 +67,6 @@ header{
 }
 
 #about-me{
-    margin-bottom: 100vh;
     display: flex;
 }
 
@@ -67,7 +81,7 @@ header{
 #about-me-text{
     margin-top: 5vh;
     margin-left: 7vw;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1.5vw;
 }
 
@@ -94,6 +108,41 @@ header{
 #picture img{
     padding-left: 17vw;
 }
+
+
+
+
+
+#portfolio{
+    display: flex;
+}
+
+#portfolio-left{
+    flex: 1;
+}
+
+#portfolio-right{
+    flex: 2;
+    text-align: right;
+    width: 50%;
+}
+
+#portfolio-Title{
+    z-index: 1;
+    position: absolute;
+    font-size: 5rem;
+    padding-left: 33vw;
+    font-family: 'Prompt', sans-serif;
+}
+
+#portfolio-Title-box {
+    width: 30vw;
+    height: 13vh;
+    background-color: #e0e0e0;
+    margin-left: 35vw;
+    margin-top: 7vh;
+}
+
 
 @keyframes fadeIn {
     0% { opacity: 0; }
