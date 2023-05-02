@@ -30,23 +30,23 @@ header{
 .page-number {
     font-weight: bold;
     font-size: 2rem;
-    margin-left: 2vw;
+    margin-left: 4vw;
     font-family: 'Prompt', sans-serif;
 }
 
-#about-me-header-container {
-    width: 30vw;
+#about-me-Title-box {
+    width: 38vw;
     height: 13vh;
     background-color: #e0e0e0;
-    margin-left: 1vw;
-    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-top: 7vh;
 }
 
 #about-me-Title{
     z-index: 1;
     position: absolute;
     font-size: 6rem;
-    padding-left: 3vw;
+    padding-left: 4vw;
     font-family: 'Prompt', sans-serif;
 
 }
