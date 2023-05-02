@@ -10,10 +10,10 @@ body{
 }
 
 header{
-    margin-bottom: 100vh;
+    margin-bottom: 110vh;
 }
 
-.name{
+#name{
     text-align: center;
     font-family: 'Zeyada', cursive;
     font-size: 2.5rem;
@@ -21,13 +21,13 @@ header{
     animation: fadeIn 5s, namefadeInTop 2s;
 }
 
-.info{
+#info{
     text-align: center;
     animation: fadeIn 5s;
     font-family: 'Prompt', sans-serif;
 }
 
-.page-number {
+#page-number {
     font-weight: bold;
     font-size: 2rem;
     margin-left: 4vw;
@@ -35,7 +35,7 @@ header{
 }
 
 #about-me-Title-box {
-    width: 38vw;
+    width: 30vw;
     height: 13vh;
     background-color: #e0e0e0;
     margin-left: 2vw;
@@ -45,14 +45,26 @@ header{
 #about-me-Title{
     z-index: 1;
     position: absolute;
-    font-size: 6rem;
-    padding-left: 4vw;
+    font-size: 5rem;
+    padding-left: 4.5vw;
     font-family: 'Prompt', sans-serif;
 
 }
 
 #about-me{
     margin-bottom: 100vh;
+}
+
+.reveal{
+    position: relative;
+    transform: var(--direction);
+    opacity: 0;
+    transition: var(--speed);
+}
+.reveal.active{
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @keyframes fadeIn {
