@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    margin-bottom: 110vh;
+    margin-bottom: 90vh;
 }
 
 #name{
@@ -68,7 +68,7 @@ header{
     margin-top: 5vh;
     margin-left: 7vw;
     font-family: 'Prompt', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5vw;
 }
 
 .reveal{
@@ -87,9 +87,12 @@ header{
 
 #picture{
     width: 50%;
-    margin-left: 40vw;
     text-align: center;
     height: 45rem;
+}
+
+#picture img{
+    padding-left: 17vw;
 }
 
 @keyframes fadeIn {
