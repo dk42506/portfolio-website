@@ -175,11 +175,21 @@ header{
     width: 30%;
 }
 
+#top-branch-text{
+    height: 7vh;
+    width: 10vw;
+    border-width: 5px;
+    text-align: right;
+    font-size: .8rem;
+    width: 40%;
+    margin-left: 10vw;
+}
+
 #branch1{
     height: 13vh;
     width: 2px;
     background-color: black;
-    margin-left: 30vw;
+    margin-left: 1vw;
 }
 
 #branch2{
@@ -193,7 +203,7 @@ header{
     height: 13vh;
     width: 2px;
     background-color: black;
-    margin-left: 30vw;
+    margin-left: 1vw;
 }
 
 #branch4{
