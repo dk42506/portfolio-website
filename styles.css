@@ -82,7 +82,8 @@ header{
     margin-top: 5vh;
     margin-left: 7vw;
     font-family: 'Arvo', serif;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
+    line-height: 2;
 }
 
 .reveal{
@@ -113,6 +114,76 @@ header{
 
 
 
+:root {
+    --cards: 4;
+    --cardHeight: 45vh;
+    --cardTopPadding: 1.5rem;
+    --cardMargin:4vw;
+}
+
+#card-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) = var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+    --index: 1;
+}
+
+#card2 {
+    --index: 2;
+}
+
+#card3 {
+    --index: 3;
+}
+#card4 {
+    --index: 4;
+}
+
+.card {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1 .card-body {
+    background-color: black;
+}
+
+#card2 .card-body {
+    background-color: blue;
+}
+
+#card3 .card-body {
+    background-color: red;
+}
+
+#card4 .card-body {
+    background-color: purple;
+}
+
+.card-body {
+    box-sizing: border-box;
+    padding: 10vw;
+    border-radius: 50px;
+    display: flex;
+    height: var(--cardHeight);
+    justify-content: center;
+    align-items: center;
+}
+
 #portfolio{
     display: flex;
 }
@@ -124,7 +195,6 @@ header{
 #portfolio-right{
     flex: 2;
     text-align: right;
-    width: 50%;
 }
 
 #portfolio-Title{
@@ -142,7 +212,6 @@ header{
     margin-left: 35vw;
     margin-top: 7vh;
 }
-
 
 
 
