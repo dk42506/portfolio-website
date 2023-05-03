@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 *{
     margin: 0;
@@ -22,7 +22,7 @@ header{
     font-size: 1.4rem;
     margin-left: 4vw;
     margin-right: 4vw;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Arvo', serif;
 }
 
 
@@ -81,7 +81,7 @@ header{
 #about-me-text{
     margin-top: 5vh;
     margin-left: 7vw;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Arvo', serif;
     font-size: 1.5vw;
 }
 
@@ -146,14 +146,12 @@ header{
 
 
 
-#history{
-    
-}
 
 #timeline{
     margin-left: 13vw;
     margin-top: 10vh;
-    font-family: 'Rubik', sans-serif;
+    margin-bottom: 12vh;
+    font-family: 'Arvo', serif;
 }
 
 #group-branches{
@@ -217,6 +215,22 @@ header{
     width: 85%;
     height: 2px;
     background-color: black;
+}
+
+#history-Title{
+    z-index: 1;
+    position: absolute;
+    font-size: 5rem;
+    padding-left: 12vw;
+    font-family: 'Prompt', sans-serif;
+}
+
+#history-Title-box {
+    width: 30vw;
+    height: 13vh;
+    background-color: #e0e0e0;
+    margin-left: 2vw;
+    margin-top: 7vh;
 }
 
 @keyframes fadeIn {
