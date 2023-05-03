@@ -15,7 +15,7 @@ header{
 }
 
 #divider{
-    margin-bottom: 90vh;
+    margin-bottom: 70vh;
 }
 
 #page-number {
@@ -143,6 +143,71 @@ header{
     margin-top: 7vh;
 }
 
+
+
+
+#history{
+    
+}
+
+#timeline{
+    margin-left: 13vw;
+    margin-top: 10vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+#group-branches{
+    display: flex;
+}
+
+#branch-container {
+    display: flex;
+    width: 50%;
+}
+
+#branch-text {
+    height: 7vh;
+    width: 10vw;
+    border-width: 5px;
+    margin-top: 4vh;
+    text-align: right;
+    font-size: .8rem;
+    width: 30%;
+}
+
+#branch1{
+    height: 13vh;
+    width: 2px;
+    background-color: black;
+    margin-left: 30vw;
+}
+
+#branch2{
+    height: 13vh;
+    width: 2px;
+    background-color: black;
+    margin-left: 1vw;
+}
+
+#branch3{
+    height: 13vh;
+    width: 2px;
+    background-color: black;
+    margin-left: 30vw;
+}
+
+#branch4{
+    height: 13vh;
+    width: 2px;
+    background-color: black;
+    margin-left: 1vw;
+}
+
+#main-line {
+    width: 85%;
+    height: 2px;
+    background-color: black;
+}
 
 @keyframes fadeIn {
     0% { opacity: 0; }
