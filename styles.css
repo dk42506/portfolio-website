@@ -82,8 +82,8 @@ header{
     margin-top: 5vh;
     margin-left: 7vw;
     font-family: 'Arvo', serif;
-    font-size: 1.3vw;
-    line-height: 50px;
+    font-size: 1.2vw;
+    line-height: 2;
 }
 
 .reveal{
@@ -114,7 +114,6 @@ header{
 
 
 
-
 #portfolio{
     display: flex;
 }
@@ -126,7 +125,6 @@ header{
 #portfolio-right{
     flex: 2;
     text-align: right;
-    width: 50%;
 }
 
 #portfolio-Title{
@@ -143,59 +141,6 @@ header{
     background-color: #e0e0e0;
     margin-left: 35vw;
     margin-top: 7vh;
-}
-
-.card-stack {
-    position: relative;
-    width: 20vw;
-    height: 20vh;
-    margin: 0 auto;
-    margin-left: 10vw;
-}
-
-.card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 550px;
-    height: 400px;
-    background-color: #e0e0e0;
-    border: 1px solid #ccc;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px 0px rgba(36,36,36,.3);
-}
-
-.card:hover {
-    transform: translateX(200px);
-    z-index: 6;
-}
-
-.card-1 {
-    transform: translateZ(0) rotatex(-10deg);
-    z-index: 5;
-    
-}
-
-.card-2 {
-    transform: translateX(40px) rotatex(-30deg);
-    z-index: 4;
-}
-
-.card-3 {
-    transform: translateX(70px) rotatex(-40deg);
-    z-index: 3;
-}
-
-.card-4 {
-    transform: translateX(100px) rotateX(-50deg);
-    z-index: 2;
-}
-
-.card-5 {
-    transform: translateX(130px) rotateX(-55deg);
-    z-index: 1;
 }
 
 
