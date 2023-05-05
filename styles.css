@@ -34,7 +34,7 @@ header{
     font-family: 'Zeyada', cursive;
     font-size: 2.5rem;
     padding-top: 20rem;
-    animation: fadeIn 5s, namefadeInTop 2s;
+    animation: fadeIn 5s, fadeInTop 2s;
 }
 
 #info{
