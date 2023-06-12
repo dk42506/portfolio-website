@@ -279,7 +279,26 @@ header{
 }
 
 #history-Title-box {
-    width: 25vw;
+    width: 35vw;
+    height: 13vh;
+    background-color: #e0e0e0;
+    margin-left: 5vw;
+    margin-top: 7vh;
+}
+
+
+
+
+#contact-me-Title{
+    z-index: 1;
+    position: absolute;
+    font-size: 5rem;
+    padding-left: 12vw;
+    font-family: 'Prompt', sans-serif;
+}
+
+#contact-me-Title-box {
+    width: 35vw;
     height: 13vh;
     background-color: #e0e0e0;
     margin-left: 5vw;
