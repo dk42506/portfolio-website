@@ -305,6 +305,35 @@ header{
     margin-top: 7vh;
 }
 
+#contact-meContainer {
+    text-align: center;
+    margin-top: 12rem;
+    font-family: 'Prompt', sans-serif;
+}
+
+#contact-meContent h1{
+    font-size: 2rem;
+}
+
+#contact-meContent h3{
+    margin-top: 2rem;
+}
+
+#socialsLogo {
+    margin-top: 3rem;
+}
+
+#socialsLogo img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10rem;
+    font-family: 'Prompt', sans-serif;
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -314,3 +343,7 @@ header{
     0% { transform: translateY(-2rem); }
     100% { transform: translateY(0); }
 }
+
+@media screen and (max-width: 55em) {
+    
+  }
