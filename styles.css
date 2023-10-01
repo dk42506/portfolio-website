@@ -345,5 +345,81 @@ footer{
 }
 
 @media screen and (max-width: 55em) {
+    header{
+        margin-bottom: 60vh;
+    }
+
+    #name{
+        font-size: 2rem;
+        padding-top: 15rem;
+    }
+
+    #page-number {
+        font-size: 1 rem;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        font-family: 'Arvo', serif;
+    }
+
+
+
+
+    #about-me-Title-box {
+        width: 70vw;
+        height: 10vh;
+    }
     
+    #about-me-Title{
+        z-index: 1;
+        position: absolute;
+        font-size: 3rem;
+        padding-left: 4.5vw;
+        font-family: 'Prompt', sans-serif;
+    
+    }
+    
+    #about-me{
+        display: flex;
+    }
+    
+    #about-me-left{
+        width: 50%;
+    }
+    
+    #about-me-header{
+        flex: 1;
+    }
+    
+    #about-me-text{
+        margin-top: 5vh;
+        margin-left: 7vw;
+        font-family: 'Arvo', serif;
+        font-size: 1.2vw;
+        line-height: 2;
+    }
+    
+    .reveal{
+        position: relative;
+        transform: var(--direction);
+        opacity: 0;
+        transition: var(--speed);
+        transition-delay: var(--delay);
+    }
+    .reveal.active{
+        transform: translateX(0);
+        transform: translateY(0);
+        opacity: 1;
+        width: auto;
+    }
+    
+    
+    #picture{
+        width: 10%;
+        text-align: center;
+        height: 10rem;
+    }
+    
+    #picture img{
+        padding-left: 17vw;
+    }
   }
