@@ -345,81 +345,252 @@ footer{
 }
 
 @media screen and (max-width: 55em) {
-    header{
-        margin-bottom: 60vh;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-
-    #name{
-        font-size: 2rem;
-        padding-top: 15rem;
+    
+    body {
+        background-color: #e8e8e8;
+        font-family: 'Prompt', sans-serif;
     }
-
+    
+    header {
+        margin-bottom: 10vh;
+    }
+    
+    #divider {
+        margin-bottom: 10vh;
+    }
+    
+    /* Page Number Styling */
     #page-number {
-        font-size: 1 rem;
+        font-size: 1.4rem;
         margin-left: 4vw;
         margin-right: 4vw;
         font-family: 'Arvo', serif;
     }
-
-
-
-
+    
+    /* Name and Info Styling */
+    #name {
+        text-align: center;
+        font-family: 'Zeyada', cursive;
+        font-size: 2.5rem;
+        padding-top: 5rem;
+        animation: fadeIn 2s, fadeInTop 1s;
+    }
+    
+    #info {
+        text-align: center;
+        animation: fadeIn 2s;
+        font-family: 'Prompt', sans-serif;
+    }
+    
+    /* About Me Section Styling */
     #about-me-Title-box {
         width: 70vw;
         height: 10vh;
     }
     
-    #about-me-Title{
+    #about-me-Title {
         z-index: 1;
         position: absolute;
         font-size: 3rem;
         padding-left: 4.5vw;
         font-family: 'Prompt', sans-serif;
-    
     }
     
-    #about-me{
+    #about-me {
         display: flex;
+        flex-wrap: wrap-reverse; /* Reversed for smaller screens */
     }
     
-    #about-me-left{
-        width: 50%;
-    }
-    
-    #about-me-header{
-        flex: 1;
-    }
-    
-    #about-me-text{
-        margin-top: 5vh;
-        margin-left: 7vw;
-        font-family: 'Arvo', serif;
-        font-size: 1.2vw;
-        line-height: 2;
-    }
-    
-    .reveal{
-        position: relative;
-        transform: var(--direction);
-        opacity: 0;
-        transition: var(--speed);
-        transition-delay: var(--delay);
-    }
-    .reveal.active{
-        transform: translateX(0);
-        transform: translateY(0);
-        opacity: 1;
-        width: auto;
-    }
-    
-    
-    #picture{
-        width: 10%;
+    #about-me-left {
+        width: 100%;
         text-align: center;
-        height: 10rem;
     }
     
-    #picture img{
-        padding-left: 17vw;
+    #about-me-text {
+        margin-top: 2rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    
+    /* Picture Styling */
+    #picture {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    #picture img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #history {
+        display: none;
+    }
+
+    /* Contact Me Section Responsiveness */
+    #contact-meContainer {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #contact-meContent h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #contact-meContent h3 {
+        margin-top: 1rem;
+    }
+
+    #socialsLogo {
+        margin-top: 1rem;
+    }
+
+    #socialsLogo img {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 2rem; /* Adjust the height as needed */
+    }
+
+    #portfolio {
+        display: none;
+    }
+    
+    
+    /* Contact Me Section Styling */
+    #contact-me-Title-box {
+        width: 70vw;
+        height: 10vh;
+    }
+    
+    #contact-me-Title {
+        z-index: 1;
+        position: absolute;
+        font-size: 3rem;
+        padding-left: 4.5vw;
+        font-family: 'Prompt', sans-serif;
+    }
+    
+    #contact-meContainer {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    #contact-meContent h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #contact-meContent h3 {
+        margin-top: 1rem;
+    }
+    
+    #socialsLogo {
+        margin-top: 1rem;
+    }
+    
+    #socialsLogo img {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 5rem;
+        font-family: 'Prompt', sans-serif;
+    }
+    
+    /* Keyframes for Animation */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeInTop {
+        0% {
+            transform: translateY(-2rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 55em) {
+        header {
+            margin-bottom: 5vh;
+        }
+    
+        #name {
+            font-size: 2rem;
+            padding-top: 5rem;
+        }
+    
+        #page-number {
+            font-size: 1rem;
+        }
+    
+        #about-me-Title-box {
+            width: 90vw;
+            height: auto;
+        }
+    
+        #about-me-Title {
+            font-size: 2rem;
+            padding-left: 2.5vw;
+        }
+    
+        #about-me-text {
+            margin-left: 2.5vw;
+            font-size: 1rem;
+        }
+    
+        #picture img {
+            padding-left: 0;
+        }
+
+        #history {
+            display: none;
+        }
+    
+        /* Contact Me Section Responsiveness */
+        #contact-meContainer {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    
+        #contact-meContent h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    
+        #contact-meContent h3 {
+            margin-top: 1rem;
+        }
+    
+        #socialsLogo {
+            margin-top: 1rem;
+        }
+    
+        #socialsLogo img {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            height: 2rem; /* Adjust the height as needed */
+        }
+    
+        #portfolio {
+            display: none;
+        }
     }
   }
