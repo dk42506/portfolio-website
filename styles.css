@@ -25,6 +25,13 @@ header{
     font-family: 'Arvo', serif;
 }
 
+#mobile-warning {
+    text-align: center;
+    animation: fadeIn 5s;
+    font-family: 'Prompt', sans-serif;
+    margin-top: 3vh;
+    display: none;
+}
 
 
 
@@ -42,16 +49,6 @@ header{
     animation: fadeIn 5s;
     font-family: 'Prompt', sans-serif;
 }
-
-#info p{
-    text-size: .5rem;
-}
-
-
-
-
-
-
 
 #about-me-Title-box {
     width: 30vw;
@@ -349,5 +346,95 @@ footer{
 }
 
 @media screen and (max-width: 55em) {
+    #mobile-warning {
+        display: flex;
+    }
+
+    #page-number {
+        font-size: .8rem;
+    }
     
-  }
+    #name{
+        font-size: 2rem;
+        padding-top: 10rem;
+    }
+
+    #info {
+        font-size: .8rem;
+    }
+
+    #about-me-Title-box {
+        width: 60vw;
+        height: 10vh;
+        margin-top: 2vh;
+    }
+    
+    #about-me-Title{
+        font-size: 2rem;
+    }
+
+    #about-me-text{
+        margin-left: 5vw;
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 80%;
+    }
+
+    #about-me {
+        flex-direction: column;  
+        align-items: center;  
+    }
+
+    #about-me-left, #picture {
+        width: 100%;  
+    }
+
+    #picture img {
+        padding-left: 0;  
+        max-width: 80%; 
+        height: auto;  
+    }
+
+
+    #portfolio-Title{
+        font-size: 2rem;
+        padding-left: 10vw;
+    }
+    
+    #portfolio-Title-box {
+        width: 30vw;
+        height: 13vh;
+        background-color: #e0e0e0;
+        margin-left: 35vw;
+        margin-top: 7vh;
+    }
+
+    #portfolio {
+        display: none;
+    }
+
+    #history{
+        display: none;
+    }
+
+    #contact-me-Title{
+        font-size: 2.5rem;
+    }
+    
+    #contact-me-Title-box {
+        width: 80vw;
+        height: 15vh;
+    }
+
+    #contact-meContainer {
+        margin-top: 10vh;
+    }
+
+    #contact-meContent h1{
+        font-size: 1rem;
+    }
+    
+    #contact-meContent h3{
+        margin-top: 2rem;
+    }
+}
