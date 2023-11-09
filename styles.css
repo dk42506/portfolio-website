@@ -410,22 +410,39 @@ footer{
     }
 
 
-    #portfolio-Title{
-        font-size: 2rem;
-        padding-left: 10vw;
-    }
+    #portfolio-Title {
+        font-size: 3rem; /* Adjust the font size as needed */
+        text-align: center; /* Center the title text */
+      }
     
-    #portfolio-Title-box {
-        width: 30vw;
-        height: 13vh;
-        background-color: #e0e0e0;
-        margin-left: 35vw;
-        margin-top: 7vh;
-    }
-
-    #portfolio {
-        display: none;
-    }
+      #portfolio-text {
+        margin: 20px auto; /* Center the text */
+        width: 80%; /* Adjust the width as needed */
+        text-align: center; /* Center the text */
+      }
+    
+      #portfolio-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+      }
+    
+      .card-stack {
+        width: 100%; /* Make the card stack full width */
+        margin-top: 20px; /* Add spacing between the text and cards */
+      }
+    
+      .card {
+        width: 100%; /* Make the cards full width */
+        margin-bottom: 20px; /* Add spacing between the cards */
+        transform: none; /* Reset the transform */
+      }
+    
+      /* Adjust card styles as needed for smaller screens */
+      .card-1, .card-2, .card-3, .card-4, .card-5 {
+        transform: none;
+        z-index: initial; /* Reset z-index */
+      }
 
     #history{
         display: none;
