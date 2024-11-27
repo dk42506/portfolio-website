@@ -1,38 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const navLinks = document.querySelectorAll('.navbar ul li a');
-
-    navLinks.forEach(link => {
-        const linkText = link.textContent;
-        link.innerHTML = ''; 
-        [...linkText].forEach(char => {
-            const span = document.createElement('span');
-            span.textContent = char;
-            link.appendChild(span);
-        });
-    });
-
-    const navbar = document.querySelector('.navbar');
-    navbar.addEventListener('mouseenter', () => {
-        navLinks.forEach(link => {
-            const spans = link.querySelectorAll('span');
-            spans.forEach(span => {
-                span.style.opacity = '1';
-                span.style.transform = 'translateX(0)';
-            });
-        });
-    });
-
-    navbar.addEventListener('mouseleave', () => {
-        navLinks.forEach(link => {
-            const spans = link.querySelectorAll('span');
-            spans.forEach(span => {
-                span.style.opacity = '0';
-                span.style.transform = 'translateX(-20px)';
-            });
-        });
-    });
-    
     const mouseCircle = document.createElement('div');
     mouseCircle.classList.add('mouse-circle');
     document.body.appendChild(mouseCircle);
