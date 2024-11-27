@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     navLinks.forEach(link => {
         const linkText = link.textContent;
-        link.innerHTML = ''; // Clear original text
+        link.innerHTML = ''; 
         [...linkText].forEach(char => {
             const span = document.createElement('span');
             span.textContent = char;
