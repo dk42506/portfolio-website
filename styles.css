@@ -38,7 +38,7 @@ body {
 }
 
 .navbar:hover {
-    width: 200px; 
+    width: 250px; 
 }
 
 .navbar ul {
@@ -61,6 +61,7 @@ body {
     overflow: hidden; 
     width: 100%; 
     white-space: nowrap; 
+    font-size: 20px;
 }
 
 .navbar ul li a span {
