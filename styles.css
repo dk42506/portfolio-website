@@ -10,11 +10,15 @@ body {
     background-color: black;
     font-weight: 100;
     font-style: normal;
-    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .mouse-circle {
+    z-index: 10000; /* Increase z-index to ensure it's above all other elements */
     position: fixed;
+    top: 0; 
+    left: 0; 
     width: 10px;
     height: 10px;
     background-color: white;
@@ -22,41 +26,19 @@ body {
     border-radius: 50%;
     pointer-events: none; 
     transition: transform 0.1s ease-out; 
-    z-index: 1000; 
 }
 
-.intro-animation {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.1); 
-    text-align: center;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-#hero-name {
-    user-select: none;
-    transition: text-shadow .3s ease;
-    color: white;
-    font-size: 8rem;
-}
-
-#hero-tagline {
-    color: rgba(255, 255, 255, 0.8); 
+.hero-section {
+    background-color: red;
+    width: 80%;
+    height: 80vh;
+    display: flex;
     justify-content: center;
-    text-align: center;
-    user-select: none;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10vh;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -60%);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
-}
